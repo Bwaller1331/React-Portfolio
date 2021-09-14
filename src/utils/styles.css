@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body {
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg,  #a14c31,#94234e,#186a88,#26750e);
+    animation: gradient 10s ease infinite;
+    height:100vh;
+  }
+  
+  
+  header  {
+    padding:20px;
+    background: #383837;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 200;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header a {
+    appearance: none;
+    outline: 0;
+    background-color: #383837;
+    border: 0;
+    padding: 10px 15px;
+    color:white ;
+    border-radius: 3px;
+    width: 150px;
+    font-size: 35px;
+    margin:0px 20px;
+    text-decoration: none;
+    
+  }
+
+  header a:hover {
+    
+    color:purple;
+    font-family: 'Press Start 2P', cursive;
+    transition: .5s ease-out;
+
+  
+  }
+
+  
+ .text-div span:hover{
+  font-size: 60px;
+   font-family: 'Press Start 2P', cursive;
+   color:purple;
+   
+ }
+
+ .spacer{
+  margin:100px;
+  background: none;
+  height: 200px;
+ }
+
+  .footer {
+    flex-direction: row;
+    padding:20px;
+    background: #383837;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 200;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+  }
+  .front-page{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 80px 100px;
+  }
+
+ 
+ 
+  .project-card {
+    border: white solid 5px;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 150px 10px;
+    box-shadow: 2px 2px 5px rgb(90, 89, 89);
+    text-align: center;
+    overflow: auto;
+    height: fit-content;
+    min-height: 250px;
+    
+  }
+  .text-div{
+    margin: 100px 100px;
+  }
+  .text-div p{
+    color:white;
+    margin: 10px;
+  }
+
+  .text-div span{
+    color: white;
+   font-size: 80px;
+   position: relative;
+   top: 20px;
+   left: 15px;
+    margin: 30px 10px;
+    font-family:"Great Vibes", cursive;
+    transition: .5s ease-in-out;
+    padding: 15px;
+  }
+
+  .project-card:hover .overlay{
+    opacity: .9;
+    transition: .5s ease-out;
+  }
+  .project-card:hover .bottom{
+    opacity: 1;
+  }
+
+  .abt-me-head{
+    border-radius: 15px;
+  }
+
+  .abt-me-desc {
+    color:white;
+    padding:2%;
+  }
+
+  .overlay{
+    opacity:0;
+    background-color:#4b4b49 ;
+    padding: 10%;
+  }
+  .card h2 {
+   font-size: 2rem;
+    color:white;
+    
+  }
+
+
+  .bottom {
+    text-align: center;
+    background-color: #383837;
+    color:white;
+    height: fit-content;
+    padding: 15px;
+    margin: 20px 20px 50px 20px;
+    border-radius: 10px;
+    opacity: 1;
+  }
+
+
+.deploy-link{
+  background:green;
+  padding: 2%;
+  font-size: 15px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin:5px;
+}
+
+.deploy-link:hover{
+  opacity: .5;
+}
+
+.github-link{
+  background:lightblue;
+  padding: 2%;
+  font-size: 15px;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 5px;
+  margin:5px;
+  cursor: pointer;
+}
+
+.github-link:hover{
+  opacity: .5;
+}
+
+.links{
+  margin:15px 30px;
+}
+
+.links:hover{
+  opacity: .4;
+}
+@media screen and (min-width:400px) { 
+  header a {
+    font-size: 30px;
+  }
+ .links img{
+   width: 100px;
+   height:100px;
+ }
+}
