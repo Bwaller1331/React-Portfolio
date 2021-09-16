@@ -22,7 +22,7 @@ const projects =[
     {
         id: 2,
         name: "Tech Blog",
-        imgURL:"https://raw.githubusercontent.com/Bwaller1331/React-Portfolio/main/src/img/tech_blog_screenshot.png?token=AR7UIKACINFY6X7QBPRWLQDBIEZZW",
+        imgURL:"https://github.com/Bwaller1331/Tech-Blog/blob/main/img/tech_blog_screenshot.png?raw=true",
         description:"A blog app that allows users to sign up, login, create and delete posts that are then viewable on the main page of the website, each post has its own page as well",
         deploy:"https://tech-blog-app-brandon.herokuapp.com/profile",
         github:"https://github.com/Bwaller1331/Tech-Blog",
@@ -42,7 +42,7 @@ const projects =[
         name: "User-Directory",
         imgURL:"https://raw.githubusercontent.com/Bwaller1331/User-Directory/master/src/assets/user-directory-screenshot-home.png",
         description:"This app is a User-Directory that is organizing data from the Randomuser.me API. The data is retrieved and then displayed in a table where the user can then search for users by name, or organize them by a variety of options.",
-        deploy:"https://bwaller1331.github.io/Work-Day-Scheduler/",
+        deploy:"https://user-directory-brandon.herokuapp.com/",
         github:"https://github.com/Bwaller1331/User-Directory",
         tech:[
             "React",

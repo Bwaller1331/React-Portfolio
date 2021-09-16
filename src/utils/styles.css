@@ -220,73 +220,98 @@
 .resume h3{
   margin: 10px;
   padding: 5px 100px;
-  border-bottom: lightblue solid 5px;
+ 
+ 
   
-  
+}
+.head-info{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: lightblue solid 8px;
+}
+
+.car-title,.resume-projects-title, .skills-title {
+  border-bottom:lightblue solid 3px;
+}
+.car-obj{
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.resume-projects{
+  margin: 20px 10px;
+  width: fit-content;
+}
+label{
+  margin: 50px;
+  font-size: 20px;
+}
+.resume h5{
+  border-bottom:lightblue solid 5px;
+  width: fit-content;
 }
 .resume-container{
   margin: 150px 100px;
   margin-bottom: 20%;
   background: white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 100px;
   
 }
-.resume-skills{
- 
-
+.proj-title{
+    margin-left: 50px;
+    background: lightblue;
 }
 .resume ul{
   margin: 20px;
   padding:10px;
-  display: table;
+  font-weight: bold;
+  
 }
-
+.pers-list{
+  margin: 5px;
+  
+}
 .pers-skills-box{
- background:red;
- width: fit-content;
-  position: relative;
-  left: 150px;
-  bottom: 287px;
+
+width: fit-content;
+display:inline-block;
+margin: 15px;
+position: relative;
+bottom: 105px;
 }
 
 .tech-skills-box{
-  background: green;
-  width: fit-content;
+ 
+ width: fit-content;
+ display: inline-block;
+ margin: 15px;
 }
 
-.project-box{
-  
+.resume-project-box{
+  border-bottom: black solid 2px;  
 }
 
 .skills-box h3{
   text-align: center;
-  
 }
 
 .skills-box{
   padding: 15px;
+  text-align: center;
+
+}
+
+.skill-wrapper{
+
 }
 
 
+@media screen and ( max-width:400px) { 
 
-
-@media screen and (max-width:400px) { 
-  header a {
-    font-size: 30px;
-  }
- .links img{
-   width: 40px;
-   height:40px;
- }
-
- .resume ul{
-   padding-left: 10px;
- }
-.spacer{
-  margin-bottom: 1000px;
-}
-.pers-skills-box{
-  
+.car-obj{
+    width: fit-content;
 }
 }

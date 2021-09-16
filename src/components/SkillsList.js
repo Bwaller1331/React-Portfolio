@@ -3,7 +3,8 @@ function SkillsList(props){
 
     return(
         <div className="skills-box">
-            <h3>Skills</h3>
+            <h3 className="skills-title">Skills</h3>
+            <div className="skill-wrapper">
             <div className="tech-skills-box">
                 <ul className="tech-skill-list" name="tech-skill-list">
                     <label for ="tech-skill-list"><h5>Technical : </h5></label>
@@ -20,7 +21,7 @@ function SkillsList(props){
                 ))}
             </ul>
             </div>
-             
+            </div>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import projects from "../projects";
 import CreateList from "./ProjectList";
 import skills from "../skills";
 import SkillsList from "./SkillsList";
-
+import education from "../education";
 
   function TechList(project){
     return (
@@ -46,7 +46,7 @@ function Resume() {
                 </p>
             </div>
             <div className="resume-projects">
-                        <h3>Projects</h3>
+                        <h3 className="resume-projects-title">Projects</h3>
                         {projects.map(CreateList)}
                  </div>
                  <div className="resume-skills">
