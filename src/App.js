@@ -5,17 +5,23 @@ import projects from "./projects";
 import Link from "./components/Link"
 import links from "./links";
 import AboutMe from "./components/AboutMe";
+import Resume from './components/Resume';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./utils/styles.css";
+
+
+
 
 function createProject(project){
   return (
   <Project 
+  id={project.id}
   name={project.name}
   img={project.imgURL}
   desc={project.description}
-  link={project.link}
+  deploy={project.deploy}
   github={project.github}
+  logo="https://cdn-icons-png.flaticon.com/512/270/270798.png"
   />
   )
 }
@@ -31,6 +37,7 @@ function createLink(link){
 }
 
 
+
 function App() {
 
   return (
@@ -44,9 +51,12 @@ function App() {
         </Route>
         <Route exact path="/projects">
       {projects.map(createProject)}
+      <div className="spacer"></div>
       </Route>
       <Route exact path="/resume">
-
+      
+        <Resume />
+       
       </Route>
       </Switch>
       </div>

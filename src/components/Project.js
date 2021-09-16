@@ -1,5 +1,3 @@
-import React from "react";
-
 
 function Project(props){
     return(
@@ -12,9 +10,9 @@ function Project(props){
             <div className="bottom">
                 <p className="project-desc">{props.desc}</p>
             </div>
-            <div className="links">
-                <a className="deploy-link" href={props.link} target="blank" >Check it out</a>
-                <a className="github-link" href={props.github} target="blank">More Information</a>
+            <div className="pro-links">
+                <a className="deploy-link" href={props.deploy} target="blank" >Check it out</a>
+                <a className="github-link" href={props.github} target="blank"><img src={props.logo} alt="github" target="blank" width="60" height="60"/></a>
             </div>
         </div>
         

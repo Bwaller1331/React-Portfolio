@@ -58,9 +58,9 @@
 
   header a:hover {
     
-    color:purple;
+    color:#26750e;
     font-family: 'Press Start 2P', cursive;
-    transition: .5s ease-out;
+    transition: .5s ease;
 
   
   }
@@ -69,7 +69,7 @@
  .text-div span:hover{
   font-size: 60px;
    font-family: 'Press Start 2P', cursive;
-   color:purple;
+   color:#26750e;
    
  }
 
@@ -104,14 +104,15 @@
   .project-card {
     border: white solid 5px;
     background-size: cover;
+    background-position: center;
     border-radius: 5px;
-    margin: 150px 10px;
+    margin: 150px 100px;
     box-shadow: 2px 2px 5px rgb(90, 89, 89);
     text-align: center;
     overflow: auto;
     height: fit-content;
     min-height: 250px;
-    
+    font-size: 25px;
   }
   .text-div{
     margin: 100px 100px;
@@ -182,23 +183,14 @@
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  margin:5px;
+  margin:15px;
 }
 
 .deploy-link:hover{
   opacity: .5;
 }
 
-.github-link{
-  background:lightblue;
-  padding: 2%;
-  font-size: 15px;
-  font-weight: bolder;
-  text-decoration: none;
-  border-radius: 5px;
-  margin:5px;
-  cursor: pointer;
-}
+
 
 .github-link:hover{
   opacity: .5;
@@ -211,12 +203,90 @@
 .links:hover{
   opacity: .4;
 }
-@media screen and (min-width:400px) { 
+.links img{
+  width: 70px;
+  height:70px;
+}
+.github-link{
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 5px;
+  margin:15px;
+  position: relative;
+  top:20px;
+  padding: 10px;
+ 
+}
+.resume h3{
+  margin: 10px;
+  padding: 5px 100px;
+  border-bottom: lightblue solid 5px;
+  
+  
+}
+.resume-container{
+  margin: 150px 100px;
+  margin-bottom: 20%;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  
+}
+.resume-skills{
+ 
+
+}
+.resume ul{
+  margin: 20px;
+  padding:10px;
+  display: table;
+}
+
+.pers-skills-box{
+ background:red;
+ width: fit-content;
+  position: relative;
+  left: 150px;
+  bottom: 287px;
+}
+
+.tech-skills-box{
+  background: green;
+  width: fit-content;
+}
+
+.project-box{
+  
+}
+
+.skills-box h3{
+  text-align: center;
+  
+}
+
+.skills-box{
+  padding: 15px;
+}
+
+
+
+
+@media screen and (max-width:400px) { 
   header a {
     font-size: 30px;
   }
  .links img{
-   width: 100px;
-   height:100px;
+   width: 40px;
+   height:40px;
  }
+
+ .resume ul{
+   padding-left: 10px;
+ }
+.spacer{
+  margin-bottom: 1000px;
+}
+.pers-skills-box{
+  
+}
 }
