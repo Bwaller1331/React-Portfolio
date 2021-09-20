@@ -224,15 +224,29 @@
  
   
 }
+
 .head-info{
   text-align: center;
-  font-size: 20px;
   margin-bottom: 20px;
   border-bottom: lightblue solid 8px;
+  padding: 15px;
+  margin-top: -80px;
 }
 
+.head-name{
+  position: relative;
+  top:-80px;
+  font-style: 35px;
+}
+
+.head-title{
+  position: relative;
+  top:-40px;
+  font-size: 30px;
+}
 .car-title,.resume-projects-title, .skills-title, .ed-title {
   border-bottom:lightblue solid 3px;
+  font-size: 25px;
 }
 .car-obj{
   text-align: center;
@@ -269,6 +283,21 @@ label{
   margin: 50px;
   font-size: 20px;
 }
+
+.pdf-link{
+  position: relative;
+  left: 600px;
+  bottom: 60px;
+  margin: 0;
+}
+
+.docs-link{
+  position: relative;
+  right: 600px;
+  top: 60px;
+  margin: 0;
+}
+
 .resume h5{
   border-bottom:lightblue solid 5px;
   width: fit-content;
@@ -311,6 +340,9 @@ bottom: 105px;
  display: inline-block;
  margin: 15px 15px 30px 15px;
 }
+.resume-projects-title{
+
+}
 
 .resume-project-box{
   border-bottom: black solid 2px;  
@@ -329,9 +361,9 @@ bottom: 105px;
 .education{
   max-width: 500px;
   position: relative;
-  bottom: 1620px;
+  bottom: 1520px;
   left: 1000px;
-  background: grey;
+ 
   border-radius: 5px;
   padding: 20px;
 }
@@ -348,8 +380,11 @@ bottom: 105px;
   font-weight: 800;
   
 }
-.skill-wrapper{
-
+.resume-skills{
+  width: fit-content;
+  position: relative;
+  left: 1000px;
+  bottom:600px;
 }
 
 
@@ -372,5 +407,9 @@ max-width: inherit;
 }
 .skills-box{
   text-align: left;
+}
+.resume-skills{
+  width: inherit;
+  position: inherit;
 }
 }

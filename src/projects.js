@@ -24,7 +24,7 @@ const projects =[
         name: "Tech Blog",
         imgURL:"https://github.com/Bwaller1331/Tech-Blog/blob/main/img/tech_blog_screenshot.png?raw=true",
         description:"A blog app that allows users to sign up, login, create and delete posts that are then viewable on the main page of the website, each post has its own page as well",
-        deploy:"https://tech-blog-app-brandon.herokuapp.com/profile",
+        deploy:"https://tech-blog-app-brandon.herokuapp.com",
         github:"https://github.com/Bwaller1331/Tech-Blog",
         tech:[
             "MySQL",

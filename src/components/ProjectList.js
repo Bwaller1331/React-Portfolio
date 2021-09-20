@@ -10,7 +10,7 @@ function CreateList(props) {
     <div className="resume-project-box">
         
         <h3 className="proj-title">{props.name}</h3>
-        <a className="proj-link" href={props.deploy}>{props.deploy}</a>
+        <a className="proj-link" href={props.deploy} target="blank">{props.deploy}</a>
         <div className="proj-det-cont">
         <div className="tech-box">
             <ul className="tech-list" name="tech-list">
