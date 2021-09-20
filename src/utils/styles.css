@@ -109,7 +109,6 @@
     margin: 150px 100px;
     box-shadow: 2px 2px 5px rgb(90, 89, 89);
     text-align: center;
-    overflow: auto;
     height: fit-content;
     min-height: 250px;
     font-size: 25px;
@@ -218,6 +217,7 @@
  
 }
 .resume h3{
+
   margin: 10px;
   padding: 5px 100px;
  
@@ -231,7 +231,7 @@
   border-bottom: lightblue solid 8px;
 }
 
-.car-title,.resume-projects-title, .skills-title {
+.car-title,.resume-projects-title, .skills-title, .ed-title {
   border-bottom:lightblue solid 3px;
 }
 .car-obj{
@@ -239,11 +239,32 @@
   margin-bottom: 50px;
   font-weight: bold;
 }
-
+.proj-det-cont{
+  display: flex;
+  flex-wrap: wrap;
+  flex:1 1 400px;
+}
 .resume-projects{
   margin: 20px 10px;
-  width: fit-content;
+  max-width: 800px;
 }
+
+.proj-desc-box{
+  max-width: 400px;
+  padding: 10px;
+ margin-top: 50px;
+ margin-left: 65px;
+ margin-bottom: 25px;
+}
+
+.proj-desc-head{
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: solid lightblue 4px;
+  
+}
+
+
 label{
   margin: 50px;
   font-size: 20px;
@@ -251,6 +272,7 @@ label{
 .resume h5{
   border-bottom:lightblue solid 5px;
   width: fit-content;
+ 
 }
 .resume-container{
   margin: 150px 100px;
@@ -287,7 +309,7 @@ bottom: 105px;
  
  width: fit-content;
  display: inline-block;
- margin: 15px;
+ margin: 15px 15px 30px 15px;
 }
 
 .resume-project-box{
@@ -304,14 +326,51 @@ bottom: 105px;
 
 }
 
+.education{
+  max-width: 500px;
+  position: relative;
+  bottom: 1620px;
+  left: 1000px;
+  background: grey;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.education p{
+  margin: 5px;
+  font-weight: 500;
+  
+}
+
+.education h5{
+  border-bottom: 4px solid lightblue;
+  margin-top: 30px;
+  font-weight: 800;
+  
+}
 .skill-wrapper{
 
 }
 
 
-@media screen and ( max-width:400px) { 
+@media screen and (max-width:1500px) { 
 
 .car-obj{
     width: fit-content;
+}
+
+.education{
+position: inherit;
+text-align: center;
+max-width: inherit;
+}
+
+.proj-desc-box{
+  position: inherit;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.skills-box{
+  text-align: left;
 }
 }

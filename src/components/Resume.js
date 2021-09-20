@@ -3,26 +3,35 @@ import CreateList from "./ProjectList";
 import skills from "../skills";
 import SkillsList from "./SkillsList";
 import education from "../education";
+import EduList from "./Education";
 
-  function TechList(project){
-    return (
-    <CreateList
-    name={project.name}
-    desc={project.description}
-    deploy={project.deploy}
-    technical={project.tech}
-    
+function eduList(certs){
+    <EduList
+        name={certs.name}
+        date={certs.date}
+        course={certs.course}
+        cert={certs.cert}
+        certDate={certs.certDate}
     />
-    )
-};
+}
+
+function projList(project){
+    <CreateList
+        name={project.name}
+        description={project.description}
+        deploy={project.deploy}
+        tech={project.tech}
+    />
+}
 
 
-function SkillList(skill){
+
+function skillsList(skills){
     return ( 
     <SkillsList
-         id={skill.id}
-         technical={skill.technical}
-         personal={skill.personal}
+         id={skills.id}
+         technical={skills.technical}
+         personal={skills.personal}
             />
     )
 };
@@ -50,7 +59,11 @@ function Resume() {
                         {projects.map(CreateList)}
                  </div>
                  <div className="resume-skills">
-                        {skills.map(SkillsList)}
+                        {skills.map(skillsList)}
+                 </div>
+                 <div className="education">
+                     <h3 className="ed-title">Education</h3>
+                     {education.map(EduList)}
                  </div>
          </div>
                     <div className="spacer"></div>
