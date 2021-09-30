@@ -50,14 +50,14 @@
     color:white ;
     border-radius: 3px;
     width: 150px;
-    font-size: 35px;
+    font-size: 50px;
     margin:0px 20px;
     text-decoration: none;
-    
+    font-family: "Great Vibes",cursive;
   }
 
   header a:hover {
-    
+    font-size: 30px;
     color:#26750e;
     font-family: 'Press Start 2P', cursive;
     transition: .5s ease;
@@ -99,7 +99,12 @@
     padding: 80px 100px;
   }
 
- 
+  .project-box-view{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 19%;
+  }
  
   .project-card {
     border: white solid 5px;
@@ -109,8 +114,8 @@
     margin: 150px 100px;
     box-shadow: 2px 2px 5px rgb(90, 89, 89);
     text-align: center;
+    max-width: 1000px;
     height: fit-content;
-    min-height: 250px;
     font-size: 25px;
   }
   .text-div{
@@ -161,6 +166,41 @@
     
   }
 
+.personal-info{
+  margin: 200px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px #000000;
+  padding: 100px;
+}
+
+.personal-name{
+  font-size: 70px;
+  font-family:"Great Vibes", cursive;;
+  padding: 20px;
+}
+.contact-link-card{
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
+  margin: 200px;
+  box-shadow: 3px 3px 5px #000000;
+  border: 2px solid #000000;
+}
+
+.contact-card{
+  margin: 50px;
+
+}
+
+.contact-card img{
+  margin: 20px;
+}
 
   .bottom {
     text-align: center;
@@ -189,7 +229,43 @@
   opacity: .5;
 }
 
+.project-header-title{
+ text-align: center;
+ font-size: 70px;
+ border-bottom:solid 15px white;
+ margin-top: 500px;
+ margin-bottom: 50px;
+ padding:20px;
+ padding-top: 150px;
+ color: white;
+ font-family: "Great Vibes", cursive;
 
+}
+@keyframes color-change{
+  0%{color:white}
+  20%{color:red}
+  40%{color:blue}
+  600%{color:green}
+  80%{color:gold}
+  100%{color:purple}
+}
+
+.experience-box{
+  text-align: center;
+  position:relative;
+  bottom: 700px;
+}
+.experience-box li{
+  text-align: left;
+  margin-left: 100px;
+}
+.project-header-title:hover{
+ 
+  transform: ease;
+}
+.project-header-title:hover{
+ 
+}
 
 .github-link:hover{
   opacity: .5;
@@ -225,6 +301,11 @@
   
 }
 
+.invisible{
+  visibility: hidden;
+  content:url("../img/bootcampCertificate.png");
+}
+
 .head-info{
   text-align: center;
   margin-bottom: 20px;
@@ -244,10 +325,16 @@
   top:-40px;
   font-size: 30px;
 }
-.car-title,.resume-projects-title, .skills-title, .ed-title {
+.car-title,.resume-projects-title, .skills-title, .ed-title  {
   border-bottom:lightblue solid 3px;
   font-size: 25px;
 }
+
+.exp-title{
+  border-bottom:lightblue solid 3px;
+  font-size: 25px;
+}
+
 .car-obj{
   text-align: center;
   margin-bottom: 50px;
@@ -390,6 +477,11 @@ bottom: 105px;
 
 @media screen and (max-width:1500px) { 
 
+.contact-link-card{
+  flex-direction: column;
+  padding: 50px;
+}
+
 .car-obj{
     width: fit-content;
 }
@@ -399,7 +491,13 @@ position: inherit;
 text-align: center;
 max-width: inherit;
 }
+.project-card{
+  min-height:fit-content;
+}
 
+.project-card:hover{
+  min-height:fit-content;
+}
 .proj-desc-box{
   position: inherit;
   margin-left: 5px;
@@ -426,4 +524,13 @@ max-width: inherit;
   left: -200px;
   font-size: 10px;
 }
+
+.project-box-view{
+  padding-left: 100px;
+}
+
+.experience-box{
+ position: inherit;
+}
+
 }

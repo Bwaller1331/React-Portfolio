@@ -8,8 +8,19 @@ import AboutMe from "./components/AboutMe";
 import Resume from './components/Resume';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./utils/styles.css";
+import ContactMe from "./components/ContactMe/index.js"
+import PersonalInfo from "./components/PersonalInfo/index.js";
 
-
+function ContactLink(link){
+  return(
+    <ContactMe 
+    name={link.name}
+    src={link.src}
+    logo={link.logo}
+    text={link.text}
+    />
+  )
+}
 
 
 function createProject(project){
@@ -32,6 +43,7 @@ function createLink(link){
     name={link.name}
     src={link.src}
     logo={link.logo}
+    text={link.text}
   />
   )
 }
@@ -48,15 +60,23 @@ function App() {
         <Switch>
           <Route exact path="/">
         <AboutMe />
+        <div id="projects" className="project-header">
+          <h3 className="project-header-title">Projects</h3>
+          <div className="project-box-view">
+        {projects.map(createProject)}
+        <div className="spacer"></div>
+        </div>
+        </div>
         </Route>
-        <Route exact path="/projects">
-      {projects.map(createProject)}
-      <div className="spacer"></div>
-      </Route>
       <Route exact path="/resume">
-      
         <Resume />
-       
+      </Route>
+      <Route exact path="/about">
+        <PersonalInfo />
+        <div className="contact-link-card">
+        {links.map(ContactLink)}
+        </div>
+        <div className="spacer"></div>
       </Route>
       </Switch>
       </div>

@@ -46,7 +46,7 @@ function Resume() {
                 <div className="resume-nav">
                     <div className="docs-link">
                     <a className="google-docs"
-                        href="https://docs.google.com/document/d/1BgCBGkW5pkhh5PKbJ53Kb6652d_dQT4Fr_tQ07o0ZSc/edit?usp=sharing"
+                        href="https://docs.google.com/document/d/1_JNrqQAkKPS4ZayO6iD5qxHOyGO_EnzMhjRGIZ2xt5M/edit?usp=sharing"
                         target="blank">
                             <img src="https://icons-for-free.com/iconfiles/png/512/docs+document+file+google+suits+icon-1320183406448604527.png"
                                 alt="Google Doc Resume Link" 
@@ -66,15 +66,14 @@ function Resume() {
                     </div>
                 </div>
                 <h1 className="head-name">Brandon Waller</h1>
-                <h4 className="head-title">Junior Full-Stack Web Developer</h4>
+                <h4 className="head-title">Full-Stack Web Developer</h4>
             </div>
             <div className="car-obj">
                 <h3 className="car-title">
                     Career Objective
                 </h3>
                 <p className="pro-desc">
-                    Recent graduate from The Ohio State University's Full-Stack Web Development Bootcamp. 
-                    Seeking an entry-level web-development job, where I can put my skills to use while learning from industry professionals.
+                Full-Stack Web Developer leveraging a background in Pipeline construction to provide unique perspectives on the construction of web applications. Earned a certificate in Full Stack Web Development from The Ohio State University’s Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development. Strengths in creativity, teamwork, and building projects from ideation to execution.  
                 </p>
             </div>
             <div className="resume-projects">
@@ -88,7 +87,23 @@ function Resume() {
                      <h3 className="ed-title">Education</h3>
                      {education.map(EduList)}
                  </div>
+                 <div className="experience-box">
+             <h3 className="exp-title">Experience</h3>
+             <h4 className="exp-name">
+                 Journeyman Pipe Fitter / Welder Helper
+             </h4>
+             <p className="exp-date">07 / 2013 - 07 / 2021</p>
+             <p className="exp-desc">
+             Lead and participated in teams that constructed natural gas pipelines, stations, and maintained existing structures. 
+             </p>
+             <ul className="exp-list">
+                 <li>Prepped and Fit steel, stainless, and chrome pipe.</li>
+                 <li>Lead crews comprised of multi-national individuals across multiple teams and departments to get construction accomplished safely, efficiently, with the greatest quality.  </li>
+                 <li>Managed sections of multi-million dollar projects. </li>
+             </ul>
+            </div>
          </div>
+         
                     <div className="spacer"></div>
     </div>
     

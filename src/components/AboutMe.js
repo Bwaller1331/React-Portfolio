@@ -1,6 +1,6 @@
-import React from "react";
 
 function AboutMe(){
+
     return <div className="front-page">
       <div className="text-div">
         <p className="">
@@ -14,10 +14,13 @@ function AboutMe(){
         <p>
             and I am a
         </p>
-        
+      
         <span>Jr. Full-Stack Web Developer</span>
         
       </div>
+    
+ 
     </div>
+    
 }
 export default AboutMe;
