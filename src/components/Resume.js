@@ -88,7 +88,7 @@ function Resume() {
                      {education.map(EduList)}
                  </div>
                  <div className="experience-box">
-             <h3 className="exp-title">Experience</h3>
+             <p className="exp-title">Experience</p>
              <h4 className="exp-name">
                  Journeyman Pipe Fitter / Welder Helper
              </h4>

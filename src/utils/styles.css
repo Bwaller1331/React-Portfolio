@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    --main-font: sans-serif;
+    --ibm-serif: 'IBM Plex Serif', serif;
   }
   html {
     font-family: "Montserrat", sans-serif;
@@ -22,7 +24,7 @@
   body {
     background-size: 400% 400%;
     background-image: linear-gradient(-45deg,  #a14c31,#94234e,#186a88,#26750e);
-    animation: gradient 10s ease infinite;
+    animation: gradient 5s ease infinite;
     height:100vh;
   }
   
@@ -50,27 +52,27 @@
     color:white ;
     border-radius: 3px;
     width: 150px;
-    font-size: 50px;
+    font-size: 35px;
     margin:0px 20px;
     text-decoration: none;
-    font-family: "Great Vibes",cursive;
+    
   }
 
   header a:hover {
-    font-size: 30px;
-    color:#26750e;
+    
+
     font-family: 'Press Start 2P', cursive;
-    transition: .5s ease;
+   
 
   
   }
 
   
  .text-div span:hover{
-  font-size: 60px;
+    /* font-size: 40px; */
    font-family: 'Press Start 2P', cursive;
-   color:#26750e;
-   
+   margin-left: 20px;
+   margin-right: 0px;
  }
 
  .spacer{
@@ -120,22 +122,28 @@
   }
   .text-div{
     margin: 100px 100px;
+    
   }
   .text-div p{
     color:white;
-    margin: 10px;
+    margin: 30px;
+    font-family: var(--ibm-serif);
   }
 
   .text-div span{
     color: white;
-   font-size: 80px;
-   position: relative;
+   font-size: 60px;
+   /* position: relative;
    top: 20px;
-   left: 15px;
-    margin: 30px 10px;
-    font-family:"Great Vibes", cursive;
+   left: 15px; */
+    margin: 30px;
+   
+    font-family: var(--ibm-serif);
     transition: .5s ease-in-out;
     padding: 15px;
+    width: 300px;
+    height: 150px;
+    transition: .5s ease-in-out;
   }
 
   .project-card:hover .overlay{
@@ -179,6 +187,7 @@
   font-size: 70px;
   font-family:"Great Vibes", cursive;;
   padding: 20px;
+  
 }
 .contact-link-card{
   justify-content: center;
@@ -231,40 +240,13 @@
 
 .project-header-title{
  text-align: center;
- font-size: 70px;
+ font-size: 50px;
  border-bottom:solid 15px white;
  margin-top: 500px;
  margin-bottom: 50px;
  padding:20px;
  padding-top: 150px;
  color: white;
- font-family: "Great Vibes", cursive;
-
-}
-@keyframes color-change{
-  0%{color:white}
-  20%{color:red}
-  40%{color:blue}
-  600%{color:green}
-  80%{color:gold}
-  100%{color:purple}
-}
-
-.experience-box{
-  text-align: center;
-  position:relative;
-  bottom: 700px;
-}
-.experience-box li{
-  text-align: left;
-  margin-left: 100px;
-}
-.project-header-title:hover{
- 
-  transform: ease;
-}
-.project-header-title:hover{
- 
 }
 
 .github-link:hover{
@@ -325,16 +307,10 @@
   top:-40px;
   font-size: 30px;
 }
-.car-title,.resume-projects-title, .skills-title, .ed-title  {
+.car-title,.resume-projects-title, .skills-title, .ed-title, .exp-title {
   border-bottom:lightblue solid 3px;
   font-size: 25px;
 }
-
-.exp-title{
-  border-bottom:lightblue solid 3px;
-  font-size: 25px;
-}
-
 .car-obj{
   text-align: center;
   margin-bottom: 50px;
@@ -396,6 +372,7 @@ label{
   background: white;
   border-radius: 5px;
   padding: 100px;
+  height: 1850px;
   
 }
 .proj-title{
@@ -473,9 +450,26 @@ bottom: 105px;
   left: 1000px;
   bottom:600px;
 }
-
-
+.exp-title {
+  font-size: 25px;
+  text-align: center;
+  margin: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+.experience-box{
+  position: relative;
+  bottom: 800px;
+}
 @media screen and (max-width:1500px) { 
+.text-div {
+  margin: 100px 30px;
+  font-size: 45px;  
+}
+
+.text-div span{
+  margin: 0px;
+}
 
 .contact-link-card{
   flex-direction: column;
@@ -529,8 +523,11 @@ max-width: inherit;
   padding-left: 100px;
 }
 
+.resume-container{
+  height:fit-content;
+}
 .experience-box{
- position: inherit;
+  position: inherit;
+}
 }
 
-}
